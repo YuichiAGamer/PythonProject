@@ -3,8 +3,15 @@ import random
 
 
 class Die:
-    def __init__(self):
-        self.face = 6
+    """
+    A class of 1 die. The number of face can be any number, default is 6.
+    """
+    def __init__(self, face=6):
+        """
+        Makes this instance.
+        :param face: The number of face of this die. default is 6.
+        """
+        self.face = face
 
     def roll(self):
         return random.randint(1, self.face)
